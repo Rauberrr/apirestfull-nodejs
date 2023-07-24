@@ -1,0 +1,94 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "nome": "Internet",
+    "description": "Fibra",
+    "price": "1000",
+    "image": "imagem3"
+}
+
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/6467cd112c1c2c057a7eaefa
+
+###
+DELETE  http://localhost:3000/api/services/
+
+###
+PUT http://localhost:3000/api/services/6467cd112c1c2c057a7eaefa
+Content-Type: application/json
+
+{
+    "nome": "aaaaaaaaaa",
+    "description": "ssssssssssssssssss",
+    "price": 2000,
+    "image": "imagem2"
+}
+
+///////////////////////////////////////
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+
+{
+    "title": "Festa de aniversario",
+    "author": "Rauber",
+    "description": "brincadeiras",
+    "budget": 3000,
+    "image": "image.png",
+    "services": [
+        {
+            "nome": "servicename",
+            "description": "description content",
+            "price": 1400,
+            "image": "aaaaaaaaa"
+        },
+        {
+            "nome": "servicename2",
+            "description": "description content",
+            "price": 1500,
+            "image": "aaaaaaaaa"
+            }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/6467ceb1e6e9d2cd665b72a9
+
+###
+DELETE http://localhost:3000/api/parties/6467c80d4e63d976b2ff1df1
+
+###
+PUT http://localhost:3000/api/parties/6467ceb1e6e9d2cd665b72a9
+Content-Type: application/json
+
+{
+    "title": "Festa de aniversario",
+    "author": "Rauber",
+    "description": "brincadeiras",
+    "budget": 3000,
+    "image": "image.png",
+    "services": [
+        {
+            "nome": "servicename",
+            "description": "description content",
+            "price": 2500,
+            "image": "aaaaaaaaa"
+        },
+        {
+            "nome": "servicename2",
+            "description": "description content",
+            "price": 1500,
+            "image": "aaaaaaaaa"
+            }
+    ]
+}
